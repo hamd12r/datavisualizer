@@ -1,0 +1,21 @@
+order_id,customer_name,age,city,category,product,sales,quantity
+1,Ali,29,Karachi,Electronics,Wireless Mouse,1200,2
+2,Sara,34,Lahore,Clothing,T-Shirt,450,3
+3,Ahmed,41,Karachi,Electronics,Bluetooth Speaker,3200,1
+4,Fatima,25,Islamabad,Groceries,Rice Bag,900,5
+5,Bilal,38,Lahore,Electronics,Laptop Stand,1500,1
+6,Hina,22,Karachi,Clothing,Jeans,1800,2
+7,Usman,45,Islamabad,Electronics,Smartphone,45000,1
+8,Ayesha,31,Lahore,Groceries,Cooking Oil,600,2
+9,Zain,27,Karachi,Electronics,Headphones,2500,1
+10,Mariam,36,Islamabad,Clothing,Jacket,3200,1
+11,Hassan,29,Karachi,Electronics,Smartwatch,8000,1
+12,Noor,24,Lahore,Groceries,Tea Pack,350,4
+13,Faisal,50,Islamabad,Electronics,Router,2200,1
+14,Sana,33,Karachi,Clothing,Sneakers,4500,1
+15,Kamran,28,Lahore,Electronics,Power Bank,1600,2
+16,Iqra,26,Islamabad,Groceries,Flour Bag,750,3
+17,Tariq,39,Karachi,Electronics,Monitor,18000,1
+18,Rabia,30,Lahore,Clothing,Dress,2600,1
+19,Omar,44,Islamabad,Electronics,Keyboard,1900,1
+20,Amna,23,Karachi,Groceries,Spices Pack,500,2
