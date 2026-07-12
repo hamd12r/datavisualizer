@@ -21,21 +21,6 @@ ai_data_explorer/
 └── README.md
 ```
 
-## Design Decisions
-
-- **Only one LLM API call is used**, as required by the competition rules.
-  It is used exclusively in `ai_explainer.py` to turn the computed
-  statistics into a short, human-readable explanation (Step 5).
-- **The 3 fixed judge questions are answered with rule-based Python logic**
-  (`answer_question()` in `data_handler.py`), not the LLM. This keeps
-  answers 100% deterministic and accurate, which matters more for judging
-  correctness than natural-language flexibility.
-- **Chart type is auto-selected** based on the dataset's column types
-  (categorical + numeric → bar chart of totals; categorical only → value
-  counts; numeric only → histogram), so the app works with any CSV.
-- **Fallback explanation**: if no Gemini API key is provided, the app still
-  runs end-to-end using a simple templated explanation instead of failing.
-
 ## Setup
 
 1. Create a virtual environment and install dependencies:
@@ -70,17 +55,6 @@ This opens the app in your browser (default: http://localhost:8501).
 4. Click **Generate Chart & Explanation** to produce a chart and an
    AI-generated explanation of the key insight.
 5. Use the **Export Chart as PNG** button to download the chart.
-
-## Supported Question Patterns
-
-The rule-based question answerer recognizes patterns such as:
-- "What is the average `<column>`?"
-- "Which `<category column>` generated the highest `<numeric column>`?"
-- "Which `<category column>` has the maximum `<count/orders>`?"
-- "Which `<category column>` appears most frequently?"
-
-It automatically matches keywords in the question to column names in the
-uploaded dataset, so it generalizes to different CSVs without code changes.
 
 ## Notes for Judges
 
